@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 
 /**
  * Class Product
@@ -35,6 +36,9 @@ class Product extends Model
      */
     protected $fillable = ['descripcion','stock','precio'];
 
-
+    public function fromDateTime($value)
+    {
+        return Carbon::parse(parent::fromDateTime($value))->format('Y-d-m H:i:s');
+    }
 
 }
