@@ -147,11 +147,16 @@ return [
         [
             'text' => 'Home',
             'icon' => 'ti ti-home',
-            'url' => '#'
+            'url' => '/home'
+        ],
+        [
+            'text' => 'products',
+            'icon' => 'ti ti-shooping-cart',
+            'url' => '/products'
         ],
         [
             'text' => 'Support',
-            'url' => '#',
+            'url' => '/support',
             'icon' => 'ti ti-help',
             'submenu' => [
                 [
